@@ -19,7 +19,7 @@ class ImageCard extends StatelessWidget {
                 image: DecorationImage(
                     image: ExactAssetImage('lib/assets/home_2.png'),
                     colorFilter:
-                        ColorFilter.mode(Colors.black54, BlendMode.saturation),
+                        ColorFilter.mode(Colors.black87, BlendMode.saturation),
                     opacity: .1,
                     fit: BoxFit.cover)),
             width: dim,
@@ -45,8 +45,8 @@ class ImageCard extends StatelessWidget {
                           : 60),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(
-                      dim < 500 ? 24 : 84, 42, dim < 500 ? 24 : 84.084, 16),
+                  padding: EdgeInsets.fromLTRB(dim < 500 ? 24 : 84,
+                      dim < 500 ? 24 : 42, dim < 500 ? 24 : 84.084, 16),
                   child: const Text(
                     'As a passionate Flutter developer with a rich background in app development and a recent focus on creating impactful user experiences for the ShopRunner mobile app, I am now seeking to bring my unique blend of creativity, technical expertise, and interdisciplinary background to Meow Wolf. \n\nMy goal is to build innovative, immersive mobile experiences that enhance Meow Wolf\'s unique art installations and narratives, contributing to the expansion of their digital experience and user engagement.',
                     style: TextStyle(
