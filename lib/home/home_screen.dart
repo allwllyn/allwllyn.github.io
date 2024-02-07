@@ -28,13 +28,17 @@ class HomeScreen extends StatelessWidget {
           SliverToBoxAdapter(
             child: Padding(
                 padding: const EdgeInsets.fromLTRB(0, 8, 0, 0),
-                child: Container(
-                  child: const Text(
-                    'Text about me',
-                    style: TextStyle(
-                      color: Colors.white,
+                child: UnconstrainedBox(
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 1000),
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        color: Colors.black45,
+                        borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(8),
+                            bottomRight: Radius.circular(8)),
+                      ),
                     ),
-                    textAlign: TextAlign.center,
                   ),
                 )),
           ),

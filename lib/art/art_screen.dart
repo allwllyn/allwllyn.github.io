@@ -8,7 +8,7 @@ class ArtScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double imgWidth = MediaQuery.of(context).size.width / 2 < 500
-        ? MediaQuery.of(context).size.width / 3.25
+        ? MediaQuery.of(context).size.width / 2
         : 500;
     return Scaffold(
       body: CustomScrollView(
