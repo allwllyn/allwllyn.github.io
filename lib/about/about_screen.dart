@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:one_dev_portfolio/about/round_photo.dart';
-import 'package:one_dev_portfolio/home/widgets/home_button.dart';
 import 'package:one_dev_portfolio/home/widgets/navigation_row.dart';
 
 class AboutScreen extends StatelessWidget {

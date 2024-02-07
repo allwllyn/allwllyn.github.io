@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:one_dev_portfolio/apps/widgets/app_showcase.dart';
-import 'package:one_dev_portfolio/home/widgets/home_button.dart';
 import 'package:one_dev_portfolio/home/widgets/navigation_row.dart';
 
 class AppsScreen extends StatelessWidget {
