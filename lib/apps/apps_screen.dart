@@ -22,6 +22,8 @@ class AppsScreen extends StatelessWidget {
           ),
           const SliverToBoxAdapter(
             child: AppShowcase(
+                ios: true,
+                android: true,
                 title: 'Event Mapr',
                 img1: 'lib/assets/event_1.png',
                 img2: 'lib/assets/event_2.png',
@@ -30,6 +32,30 @@ class AppsScreen extends StatelessWidget {
                     'Map for laying out tables, Information/ graph page, ability to export csv of financial info',
                 technologies:
                     ' Flutter, Dart, Firebase, Google Cloud Messaging, Google Cloud Functions, Github'),
+          ),
+          const SliverToBoxAdapter(
+            child: AppShowcase(
+                ios: false,
+                android: true,
+                title: 'Votebot',
+                img1: 'lib/assets/poster_1.png',
+                img2: 'lib/assets/poster_2.png',
+                img3: 'lib/assets/poster_3.png',
+                coreFeatures:
+                    'Candidates upload posters, judges can views posters and submit scores, admin can run result function to show winner ',
+                technologies: ' Android, Kotlin, Firebase, Github, Figma'),
+          ),
+          const SliverToBoxAdapter(
+            child: AppShowcase(
+                ios: true,
+                android: true,
+                title: 'Seat Finder',
+                img1: 'lib/assets/seat_1.png',
+                img2: 'lib/assets/seat_2.png',
+                img3: 'lib/assets/seat_3.png',
+                coreFeatures:
+                    'Students around campus can share open seats at their table, someone looking for somewhere to search open seats by location',
+                technologies: ' Flutter, Dart, Firebase, Github'),
           ),
           SliverToBoxAdapter(
             child: UnconstrainedBox(

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-enum screens { home, about, app, art }
-
 class HomeButton extends StatefulWidget {
   const HomeButton({required this.onTap, required this.text, super.key});
 

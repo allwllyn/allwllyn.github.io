@@ -4,6 +4,8 @@ import 'package:one_dev_portfolio/apps/widgets/app_title.dart';
 class AppShowcase extends StatelessWidget {
   const AppShowcase(
       {required this.title,
+      required this.ios,
+      required this.android,
       required this.img1,
       required this.img2,
       required this.img3,
@@ -12,6 +14,8 @@ class AppShowcase extends StatelessWidget {
       super.key});
 
   final String title;
+  final bool ios;
+  final bool android;
   final String img1;
   final String img2;
   final String img3;
@@ -24,13 +28,18 @@ class AppShowcase extends StatelessWidget {
         ? MediaQuery.of(context).size.width / 3.25
         : 500;
     return Container(
+      width: 400,
       margin: const EdgeInsets.fromLTRB(32, 16, 32, 16),
       decoration: BoxDecoration(
           border: Border.all(color: Colors.grey.withAlpha(20), width: 3)),
       child: Column(children: [
-        AppTitle(title: title),
+        AppTitle(
+          title: title,
+          ios: ios,
+          android: android,
+        ),
         ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 1000),
+          constraints: const BoxConstraints(maxWidth: 1200),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -69,6 +78,9 @@ class AppShowcase extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
+        ),
+        const SizedBox(
+          height: 24,
         )
       ]),
     );
