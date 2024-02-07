@@ -54,7 +54,7 @@ class AppsScreen extends StatelessWidget {
                 img2: 'lib/assets/seat_2.png',
                 img3: 'lib/assets/seat_3.png',
                 coreFeatures:
-                    'Students around campus can share open seats at their table, someone looking for somewhere to search open seats by location',
+                    'Students around campus can share open seats at their table, someone looking for somewhere  to sit can search open seats by location',
                 technologies: ' Flutter, Dart, Firebase, Github'),
           ),
           SliverToBoxAdapter(

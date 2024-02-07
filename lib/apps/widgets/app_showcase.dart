@@ -24,9 +24,9 @@ class AppShowcase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double imgWidth = MediaQuery.of(context).size.width / 3.25 < 500
+    double imgWidth = MediaQuery.of(context).size.width / 3.25 < 600
         ? MediaQuery.of(context).size.width / 3.25
-        : 500;
+        : 600;
     return Container(
       width: 400,
       margin: const EdgeInsets.fromLTRB(32, 16, 32, 16),
@@ -39,7 +39,7 @@ class AppShowcase extends StatelessWidget {
           android: android,
         ),
         ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 1200),
+          constraints: const BoxConstraints(maxWidth: 1400),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
